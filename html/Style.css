@@ -159,14 +159,6 @@ a:hover{
     text-align:left;
 }
 
-#2 {
-    height: 560px;
-    width: 800px;
-    border-radius: 50px;
-    background: #e0e0e0;
-    box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
-    padding: 30px;
-    /* 让盒子居中 */
-    margin: 0 auto;
-    margin-top: 70px;
+#biaoti2{
+    font-size:150%;
 }
