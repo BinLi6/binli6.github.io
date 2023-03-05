@@ -160,13 +160,13 @@ a:hover{
 }
 
 #2 {
-    height: 800px;
-    width: 0 auto;
+    height: 560px;
+    width: 800px;
     border-radius: 50px;
     background: #e0e0e0;
     box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
     padding: 30px;
+    /* 让盒子居中 */
     margin: 0 auto;
     margin-top: 70px;
-    text-align: left;
 }
