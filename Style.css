@@ -122,8 +122,8 @@ body {
 
 /* Main-1 开源作品 */
 #main-1 {
-    height:200px;
-    width: 320px;
+    height:10%;
+    width: 25%;
     border-radius: 35px;
     padding: 20px;
     box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
@@ -159,8 +159,8 @@ a:hover{
 }
 
 #text {
-    height: 600px;
-    width: 800px;
+    height: 400px;
+    width: 65%;
     padding: 20px;
     box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
     border-radius: 50px;
