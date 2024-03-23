@@ -176,28 +176,6 @@ a:hover{
 	transition: all 0.5s;
 }
 
-#English {
-    height: 100%;
-    width: 65%;
-    padding: 20px;
-    box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
-    border-radius: 50px;
-    margin-right: auto;
-    margin-top:20px;
-    float: right;
-}
-
-#Chinese {
-    height: 100%;
-    width: 65%;
-    padding: 20px;
-    box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
-    border-radius: 50px;
-    margin-right: auto;
-    margin-top: 20px;
-    float: right;
-}
-
 #404 {
     height: 200px;
     padding: 20px;
