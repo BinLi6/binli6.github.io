@@ -103,11 +103,16 @@ body {
 #nick {
     text-align: center;
     font-size: 30px;
+    font-weight:600;
 }
 
 /* 定义一段文字样式 */
 #info {
     text-align: left;
+}
+
+#title{
+    font-weight:700;
 }
 
 #main-1 {
