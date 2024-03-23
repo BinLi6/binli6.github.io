@@ -1,16 +1,4 @@
 ﻿@charset "utf-8";
-/* 使用自定义字体 */
-@font-face {
-    font-family: "DIY font";
-    src: url("https://cdn.jsdelivr.net/gh/xiaoyanu/file-test@2021.11.24/more/HarmonyOS_Sans_SC_Medium.subset.woff2");
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    font-family: "DIY font";
-    transition: all 0.2s;
-}
 
 /* 美化滚动条 */
 ::-webkit-scrollbar { /*滚动条整体样式*/
@@ -33,9 +21,21 @@
 }
 
 body {
-    background-color: #E0E0E0;
-    /* 禁止鼠标选择文字 */
+    background: url(https://www.loliapi.com/acg/);
+    background-size: cover;
     user-select: none;
+    backdrop-filter: blur(2px);
+    backdrop-filter: brightness(60%);
+    backdrop-filter: contrast(40%);
+    backdrop-filter: drop-shadow(4px 4px 10px blue);
+    backdrop-filter: grayscale(30%);
+    backdrop-filter: hue-rotate(120deg);
+    backdrop-filter: invert(70%);
+    backdrop-filter: opacity(20%);
+    backdrop-filter: sepia(90%);
+    backdrop-filter: saturate(80%);
+    /* 多重滤镜 */
+    backdrop-filter: blur(4px) saturate(150%);
 }
 
 /* 定义主盒子 */
@@ -43,7 +43,6 @@ body {
     height: 560px;
     width: 800px;
     border-radius: 50px;
-    background: #e0e0e0;
     box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
     padding: 30px;
     /* 让盒子居中 */
@@ -55,8 +54,7 @@ body {
 #head {
     padding: 16px 0;
     border-radius: 35px;
-    background: #e0e0e0;
-    box-shadow: inset 5px 5px 10px #bebebe, inset -5px -5px 10px #ffffff;
+    box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
 }
 
 /* 定义头像图片样式 */
@@ -99,15 +97,6 @@ body {
         box-shadow: 0 0 4px #f00;
     }
 }
-/* 当鼠标放到图片上时进行旋转 */
-#touxiang:hover {
-    transform: rotate(360deg);
-    -ms-transform: rotate(360deg);
-    -webkit-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    transform: scale(0.9) rotate(720deg);
-}
 
 /* 定义昵称样式 */
 #nick {
@@ -120,33 +109,31 @@ body {
     text-align: left;
 }
 
-/* Main-1 开源作品 */
 #main-1 {
-    height:10%;
+    background: #BEC9D5;
     width: 25%;
     border-radius: 35px;
     padding: 20px;
     box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
-    float:left;
+    float: left;
     margin-right: auto;
     margin-left: auto;
-    margin-top:20px;
+    margin-top: 20px;
 }
 
-/* 页脚样式 */
-#footer{
-	height: 30px;
-	width: 100%;
-	background-color: red;
-	float: left;
-	border-radius: 35px;
-	background: #e0e0e0;
-	box-shadow: inset 5px 5px 10px #bebebe,
-	            inset -5px -5px 10px #ffffff;
-	padding-top: 8px;
-	margin-top: 30px;
-	text-align: center;
+#main-2 {
+    background: #BEC9D5;
+    height: 2000px;
+    width: 60%;
+    border-radius: 35px;
+    padding: 20px;
+    float: right;
+    box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20px;
 }
+
 
 a{
 	text-decoration: none;
