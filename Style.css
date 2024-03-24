@@ -165,6 +165,12 @@ body {
         border-radius: 35px;
     }
 
+#secondary-1{
+    width:20%;
+    height:40%;
+    padding:10px;
+    border-radius:35px;
+}
 
 a{
 	text-decoration: none;
