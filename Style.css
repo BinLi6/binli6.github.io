@@ -166,10 +166,11 @@ body {
     }
 
 #secondary-1{
-    width:20%;
-    height:40%;
+    width:15%;
+    height:20%;
     padding:10px;
     border-radius:35px;
+    float:left;
 }
 
 a{
