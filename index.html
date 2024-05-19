@@ -6,24 +6,6 @@
     <title>BinLi的小站</title>
     <link rel=" shortcut icon" href="../img/title.jpg" />
     <link rel="stylesheet" href="Style.css" />
-    <style>
-        a:link {
-            color: #000000;
-        }
-        /* 未访问链接*/
-        a:visited {
-            color: #00FF00;
-        }
-        /* 已访问链接 */
-        a:hover {
-            color: #FF00FF;
-        }
-        /* 鼠标移动到链接上 */
-        a:active {
-            color: #0000FF;
-        }
-        /* 鼠标点击时 */
-    </style>
 </head>
 <body>
     <div id="main_box">
@@ -53,20 +35,39 @@
         </div>
     </div>
     <div id="main-1">
-        <p id="title">联系站长</p>
-        <p id="info">
-            QQ: 3419692751
-      <br />email: liu1351234@163.com
-            <a href="https://github.com/BinLi6" target="_blank"><br />Github: https://github.com/BinLi6</a>
-        </p>
+        <div id="countdown"></div>
+        <script>
+            var countDownDate = new Date("Jun 7, 2026 00:00:00").getTime();
+
+            var x = setInterval(function () {
+                var now = new Date().getTime();
+                var distance = countDownDate - now;
+
+                var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                document.getElementById("countdown").innerHTML = "奋斗倒计时: "+days + "天 " + hours + "小时 "
+                    + minutes + "分钟 " + seconds + "秒 ";
+
+                if (distance < 0) {
+                    clearInterval(x);
+                    document.getElementById("countdown").innerHTML = "0天 0小时 0分钟 0秒";
+                }
+            }, 1000);
+        </script>
     </div>
     <div id="main-2">
         <p id="title">文章</p>
-            <div id="secondary-1">
-                <a href="../html/1.html"target="_blank">
-                    <img src="../img/1.png" style="border-radius:35px; height:100%; width:auto"/>
-                </a>
-            </div>
+        <div id="secondary-1">
+            <p>预留栏（未开发）</p>
+            <script>
+                document.getElementById("secondary-1").addEventListener("click", function () {
+                    window.location.href = "html1.html";
+                });
+            </script>
+        </div>
      </div>
 </body>
 </html>
