@@ -46,17 +46,23 @@ body {
     box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
 }
 
-    #head::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        z-index: -1;
-        backdrop-filter: blur(15px);
-        border-radius: 35px;
-    }
+#head::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    backdrop-filter: blur(15px);
+    border-radius: 35px;
+}
+
+#quotes{
+    font-weight:700;
+    padding-bottom:5px;
+    padding-left:5px;
+}
 
 /* 定义头像图片样式 */
 #touxiang {
