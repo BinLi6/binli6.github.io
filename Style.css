@@ -23,6 +23,7 @@
 body {
     background: url(https://www.loliapi.com/acg/);
     background-size: cover;
+    background-repeat:no-repeat;
     user-select: none;
 }
 
